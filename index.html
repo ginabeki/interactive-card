@@ -1,51 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive card details form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Interactive card details form</title>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    
+  </head>
+  <body>
+    <!-- 0000 0000 0000 0000 Jane Appleseed 00/00 000 Cardholder Name e.g. Jane
+    Appleseed Card Number e.g. 1234 5678 9123 0000 Exp. Date (MM/YY) MM YY CVC
+    e.g. 123 Confirm -->
+    <div class="content">
+<div class="left"></div>
+<div class="right">
+  <form action="" class="form">
+    <div class="form-group">
+      <label for="owner"> CARDHOLDER NAME </label>
+      <input type="text" class="form-control" id="owner" placeholder=" e.g. Jane Appleseed">
+    </div>
+    <div class="form-group">
+      <label for="CardNumber"> CARD NUMBER </label>
+      <input type="number" class="form-control" id="number" placeholder=" e.g. 1234 5678 9123 0000 ">
+    </div>
+   <div class="wrap">
+<div class="wrap-select">
+    <div class="form-select">
+      <label for=""> EXP. DATE (MM/YY)</label>
+      <div class="select-opt">
+      <select name="month" id="month" class="month-select">
+        <option value="month" disabled selected>MM</option>
+        <option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>
 
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <select name="years" id="year" >
+        <option value="year" disabled selected>YY</option>
+        <option value="13">2022</option>
+        <option value="14">2023</option>
+        <option value="15">2024</option>
+        <option value="16">2025</option>
+        <option value="17">2026</option>
+      </select>
+    </div>
+    </div>
+    </div>
+    <div class="form-group">
+      <label for="cvc">CVC</label>
+      <input type="text" class="form-cvc" id="cvv" placeholder="e.g. 123">
+    </div>
+   </div>
+    <div class="submit">
+      <input type="submit" value="Confirm" id="submit">
+    </div>
+  </form>
+</div>
+</div>
+    <!-- Completed state start -->
+<!-- 
+    Thank you! We've added your card details Continue -->
+<footer>
+    <div class="footer">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/ginabeki">Gina Beki</a>.
+    </footer>
+  </body>
 </html>

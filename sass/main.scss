@@ -1,0 +1,103 @@
+// colors
+$color-primary:linear-gradient(#6448fe, #600594);
+$color-input-error:hsl(0, 100%, 66%);
+$color-white: #fff;
+$color-light-grayish: #dedddf;
+$color-dark-grayish: #8e8593;
+$color-very-dark-violet: #21092f;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.7;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    //height: 100vh;
+}
+.left {
+    height: 40vh;
+    background-image: url("images/bg-main-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+}
+.right {
+    height: 60vh;
+    //width: 100%;
+}
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid $color-dark-grayish;
+}
+
+form.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    color: $color-very-dark-violet;
+    font-weight: 500;
+}
+.wrap {
+    display: flex;
+    //justify-content:;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.form-select {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+select#month {
+    padding: 10px 0;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid $color-dark-grayish;
+}
+select#year {
+    padding: 10px 0;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid $color-dark-grayish;
+    //margin-left: 10px;
+}
+.form-cvc {
+    margin-left: 20px;
+}
+select::-ms-expand {
+    display: none;
+}
+
+#submit {
+    background: $color-very-dark-violet;
+    color: $color-white;
+    font-weight: bold;
+    padding: 12px 0;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 1.1rem;
+}
+div.footer {
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 70px;
+}

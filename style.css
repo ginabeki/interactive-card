@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.7; }
+
+.content {
+  display: flex;
+  flex-direction: column; }
+
+.left {
+  height: 40vh;
+  background-image: url("images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 600px 400px; }
+
+.right {
+  height: 60vh; }
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #8e8593; }
+
+form.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  color: #21092f;
+  font-weight: 500; }
+
+.wrap {
+  display: flex; }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px; }
+
+.form-select {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px; }
+
+select#month {
+  padding: 10px 0;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #8e8593; }
+
+select#year {
+  padding: 10px 0;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #8e8593; }
+
+.form-cvc {
+  margin-left: 20px; }
+
+select::-ms-expand {
+  display: none; }
+
+#submit {
+  background: #21092f;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 0;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 1.1rem; }
+
+div.footer {
+  text-align: center;
+  font-family: sans-serif;
+  padding-top: 70px; }
