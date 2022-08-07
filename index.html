@@ -51,60 +51,45 @@
       
     </div>
   </div>
- 
-<!-- </div> -->
 </div>
-<div class="right">
-  <form action="" class="form">
-    <div class="form-group">
-      <label for="owner"> CARDHOLDER NAME </label>
-      <input type="text" class="form-control" id="owner" placeholder=" e.g. Jane Appleseed">
-    </div>
-    <div class="form-group">
-      <label for="CardNumber"> CARD NUMBER </label>
-      <input type="number" class="form-control" id="number" placeholder=" e.g. 1234 5678 9123 0000 ">
-    </div>
-   <div class="wrap">
-<div class="wrap-select">
-    <div class="form-select">
-      <label for=""> EXP. DATE (MM/YY)</label>
-      <div class="select-opt">
-      <select name="month" id="month" class="month-select">
-        <option value="month" disabled selected>MM</option>
-        <option value="01">January</option>
-        <option value="02">February</option>
-        <option value="03">March</option>
-        <option value="04">April</option>
-        <option value="05">May</option>
-        <option value="06">June</option>
-        <option value="07">July</option>
-        <option value="08">August</option>
-        <option value="09">September</option>
-        <option value="10">October</option>
-        <option value="11">November</option>
-        <option value="12">December</option>
-      </select>
-
-      <select name="years" id="year" >
-        <option value="year" disabled selected>YY</option>
-        <option value="13">2022</option>
-        <option value="14">2023</option>
-        <option value="15">2024</option>
-        <option value="16">2025</option>
-        <option value="17">2026</option>
-      </select>
-    </div>
-    </div>
-    </div>
-    <div class="form-group-1">
-      <label for="cvc" id="cvc">CVC</label>
-      <input type="text" class="form-cvc" id="cvv" placeholder=" e.g. 123">
-    </div>
-   </div>
-    <div class="submit">
-      <input type="submit" value="Confirm" id="submit">
-    </div>
-  </form>
+<div class="form-group">
+  <!--  form -->
+<form action="/" id="form" class="form">
+  <!-- owner -->
+  <div class="form-control">
+    <label for="owner"> Owner</label>
+    <input type="text" id="owner" placeholder=" e.g. Jane Appleseed" >
+    <small>Can't be blank</small>
+  </div>
+  <!-- card number -->
+  <div class="form-control">
+    <label for="card"> Card Number </label>
+    <input type="text" id="card-number" placeholder=" e.g. 1234 5678 9123 0000 ">
+    <small>Wrong format, number only</small>
+  </div>
+  <!-- Expiry date -->
+  <!-- <div class="inline-input"> -->
+  <div class="form-control">
+    <label for="date">Exp. Date (mm/yy)</label>
+    <div class="expiry">
+      <input type="text" placeholder="MM" id="month">
+      <input type="text" placeholder="YY" id="year">
+    <!-- </div> -->
+    
+    <small>Can't be blank</small>
+  </div>
+  <!-- CVC number -->
+  <div class="form-control">
+    <label for="CVC">CVC</label>
+    <input type="text" id="cvc" placeholder=" e.g. 123">
+    <small>Can't be blank</small>
+  </div>
+</div>
+<!-- button -->
+<div class="submit">
+<input type="submit" value="Confirm" id="submit-btn">
+</div>
+</form>
 </div>
 </div>
     <!-- Completed state start -->
@@ -117,5 +102,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/ginabeki">Gina Beki</a>.
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

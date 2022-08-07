@@ -75,82 +75,78 @@ div.span-flex {
   font-size: 0.6rem;
   margin: 10px 0 0 39px; }
 
-.right {
-  /* justify-content: space-around; */ }
-
-input[type="text"],
-input[type="number"] {
-  padding: 10px;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid #8e8593; }
-
 form.form {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  flex-direction: column;
-  padding: 10px;
-  color: #21092f;
-  font-weight: 500; }
+  padding: 30px 40px; }
 
-.wrap {
-  display: flex; }
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative; }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px; }
-
-.form-select {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px; }
-
-div.select-opt {
-  display: inline-flex; }
-
-select#month {
-  padding: 10px 0;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid #8e8593; }
-
-select#year {
-  padding: 10px 0;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid #8e8593;
-  padding-left: 15px;
-  margin-left: 10px; }
-
-div.form-group-1 {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px; }
-
-input.form-cvc {
-  margin-left: 20px;
-  max-width: 79%; }
-
-label#cvc {
-  padding-top: 2px;
-  margin-left: 20px; }
-
-select::-ms-expand {
-  display: none; }
-
-#submit {
-  background: #21092f;
-  color: #fff;
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-family: inherit;
   font-weight: bold;
-  padding: 12px 0;
-  border-radius: 5px;
-  border: none;
+  text-transform: uppercase;
+  color: #21092f; }
+
+.form-control input {
+  display: block;
+  border: 1px solid #8e8593;
+  border-radius: 4px;
   width: 100%;
-  margin-top: 30px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  outline: none; }
+
+.form-control input:focus {
+  outline: 0;
+  border: 1px solid #21092f; }
+
+.form-control.success input {
+  border-radius: 1px solid #21092f; }
+
+.form-control.error input {
+  border-radius: 1px solid #ff5252; }
+
+.form-control small {
+  color: #ff5252;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden; }
+
+.form-control.error small {
+  visibility: visible; }
+
+.inline-input {
+  display: flex;
+  flex-direction: row; }
+
+div.expiry {
+  display: flex;
+  margin-right: 25px; }
+
+input#month {
+  margin-right: 10px;
+  width: 80px; }
+
+input#year {
+  width: 80px; }
+
+input#submit-btn {
+  background-color: #21092f;
+  color: #fff;
+  border: 2px solid #21092f;
+  width: 100%;
+  font-family: inherit;
+  padding: 10px;
+  border-radius: 4px;
   font-size: 1.1rem;
-  text-align: center; }
+  text-align: center;
+  margin-top: 20px; }
 
 div.footer {
   text-align: center;
@@ -167,33 +163,6 @@ div.footer {
     background-size: 1450px 900px;
     width: 30%;
     flex-direction: column-reverse; }
-  .right {
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 70%;
-    margin-left: 250px; }
-  .front img {
-    width: 300px;
-    margin-top: 100px;
-    margin-right: 0;
-    margin-left: 80px; }
-  .back img {
-    width: 300px;
-    margin-top: 50px;
-    margin-left: 230px; }
-  .text-box {
-    margin-top: -140px; }
-  span.solid {
-    margin-left: 155px; }
-  span.text {
-    top: -113px; }
-  span.span-1 {
-    margin-left: 134px;
-    font-size: 1.3rem; }
-  div.span-flex {
-    margin: 10px 0 0 138px; }
   div.footer {
     margin-bottom: 0;
     padding-top: 0; } }
@@ -207,33 +176,6 @@ div.footer {
     background-size: 1450px 900px;
     width: 30%;
     flex-direction: column-reverse; }
-  .right {
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 70%;
-    margin-left: 120px; }
-  .front img {
-    width: 350px;
-    margin-top: 100px;
-    margin-right: 0;
-    margin-left: 100px; }
-  .back img {
-    width: 350px;
-    margin-top: 50px;
-    margin-left: 250px; }
-  .text-box {
-    margin-top: -140px; }
-  span.solid {
-    margin-left: 155px; }
-  span.text {
-    top: -113px; }
-  span.span-1 {
-    margin-left: 164px;
-    font-size: 1.3rem; }
-  div.span-flex {
-    margin: 10px 0 0 165px; }
   div.footer {
     margin-bottom: 0;
     padding-top: 0; } }
