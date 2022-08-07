@@ -73,15 +73,22 @@ div.span-flex {
   display: flex;
   justify-content: space-between;
   font-size: 0.6rem;
-  margin: 10px 0 0 39px; }
+  margin: 10px 0 0 39px;
+  text-transform: uppercase; }
+
+span.expiry-date {
+  margin-left: 80px; }
 
 form.form {
-  padding: 30px 40px; }
+  padding: 30px 40px;
+  width: 400px;
+  max-width: 100%; }
 
 .form-control {
   margin-bottom: 10px;
   padding-bottom: 20px;
-  position: relative; }
+  position: relative;
+  padding-top: 10px; }
 
 .form-control label {
   display: inline-block;
@@ -130,11 +137,7 @@ div.expiry {
   margin-right: 25px; }
 
 input#month {
-  margin-right: 10px;
-  width: 80px; }
-
-input#year {
-  width: 80px; }
+  margin-right: 10px; }
 
 input#submit-btn {
   background-color: #21092f;

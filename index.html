@@ -28,7 +28,6 @@
     Appleseed Card Number e.g. 1234 5678 9123 0000 Exp. Date (MM/YY) MM YY CVC
     e.g. 123 Confirm -->
     <div class="content">
-      <!-- <div class="images"> -->
         
 <div class="left">
   <div class="back">
@@ -36,55 +35,53 @@
     <div class="text-card">
       <span class="text">000</span>
     </div>
-  </div>
-
-  <div class="front">
+    </div>
+    <div class="front">
     <img src="images/bg-card-front.png" alt="front side of the card">
     <div class="text-box"> 
       <div class="sub-box">
         <span class="solid"></span> <span class="solid-empty"></span><br>
       </div>
-      <span class="span-1"> 0000 0000 0000 0000 </span><br>
+      <span class="span-1">0000 0000 0000 0000 <span><br>
       <div class="span-flex">
-        <span>JANE APPLESEED</span><span>00/00</span>
+        <span class="name">JANE APPLESEED</span><span class="expiry-date">00</span><span>/</span><span class="exp-year">00</span>
       </div>
-      
+    </div>
     </div>
   </div>
-</div>
 <div class="form-group">
   <!--  form -->
-<form action="/" id="form" class="form">
+<form action="/" method="post" id="form" class="form">
   <!-- owner -->
   <div class="form-control">
     <label for="owner"> Owner</label>
-    <input type="text" id="owner" placeholder=" e.g. Jane Appleseed" >
+    <input type="text" id="owner" placeholder=" e.g. Jane Appleseed" class="owner" >
     <small>Can't be blank</small>
   </div>
   <!-- card number -->
   <div class="form-control">
     <label for="card"> Card Number </label>
-    <input type="text" id="card-number" placeholder=" e.g. 1234 5678 9123 0000 ">
+    <input type="text" id="card-number" placeholder=" e.g. 1234 5678 9123 0000 " class="card-input">
     <small>Wrong format, number only</small>
   </div>
   <!-- Expiry date -->
-  <!-- <div class="inline-input"> -->
-  <div class="form-control">
+  
+  <class class="form-control">
     <label for="date">Exp. Date (mm/yy)</label>
     <div class="expiry">
-      <input type="text" placeholder="MM" id="month">
-      <input type="text" placeholder="YY" id="year">
+      <input type="text" placeholder="MM" id="month" class="month">
+      <input type="text" placeholder="YY" id="year" class="year">
     <!-- </div> -->
-    
     <small>Can't be blank</small>
   </div>
+
   <!-- CVC number -->
   <div class="form-control">
     <label for="CVC">CVC</label>
-    <input type="text" id="cvc" placeholder=" e.g. 123">
+    <input type="text" id="cvc" placeholder=" e.g. 123" class="cvc">
     <small>Can't be blank</small>
   </div>
-</div>
+
 <!-- button -->
 <div class="submit">
 <input type="submit" value="Confirm" id="submit-btn">

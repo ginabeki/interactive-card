@@ -5,6 +5,22 @@ const month = document.getElementById("month");
 const year = document.getElementById("year");
 const cvc = document.getElementById("cvc");
 
+document.querySelector(".owner").oninput = () =>{
+    document.querySelector(".name").innerText = document.querySelector(".owner").value;
+};
+document.querySelector(".card-input").oninput = () =>{
+    document.querySelector(".span-1").innerText = document.querySelector(".card-input").value;
+};
+document.querySelector(".month").oninput = () => {
+    document.querySelector(".expiry-date").innerText = document.querySelector(".month").value;
+};
+document.querySelector(".year").oninput = () => {
+    document.querySelector(".exp-year").innerText = document.querySelector(".year").value;
+};
+document.querySelector(".cvc").oninput = () => {
+    document.querySelector(".text").innerText = document.querySelector(".cvc").value;
+};
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
