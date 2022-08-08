@@ -22,24 +22,29 @@
   <body>
          <!--first section  -->
 <section class="left">
+  <div class="card-1">
   <div class="back">
-    <img src="images/bg-card-back.png" alt="back side of card">
-    <div class="text-card">
       <span class="text">000</span>
+    <img src="images/bg-card-back.png" alt="back side of card">
     </div>
-    </div>
+  </div>
+  <!-- front card -->
+  <div class="front-card">
     <div class="front">
+          <div class="solid"></div> 
+          <div class="solid-empty"></div>
+        <span class="span-1">0000 0000 0000 0000 </span>
+          <span class="name">JANE APPLESEED</span>
+        <span class="span-flex">
+          <p class="expiry-date">00</p>
+          <p class="slash">/</p>
+          <p class="exp-year">00</p>
+        </span>
+      <!-- </div> -->
     <img src="images/bg-card-front.png" alt="front side of the card">
-    <div class="text-box"> 
-      <div class="sub-box">
-        <span class="solid"></span> <span class="solid-empty"></span><br>
-      </div>
-      <span class="span-1">0000 0000 0000 0000 <span><br>
-      <div class="span-flex">
-        <span class="name">JANE APPLESEED</span><span class="expiry-date">00</span><span>/</span><span class="exp-year">00</span>
-      </div>
+    
     </div>
-    </div>
+  </div>
   </section>
   <!-- second section starts here -->
 <section class="form-group">
@@ -47,7 +52,7 @@
 <form action="/" method="post" id="form" class="form">
   <!-- owner -->
   <div class="form-control">
-    <label for="owner"> Owner</label>
+    <label for="owner"> CardHolder Name</label>
     <input type="text" id="owner" placeholder=" e.g. Jane Appleseed" class="owner" >
     <small>Can't be blank</small>
   </div>
@@ -87,6 +92,14 @@
 <div class="submit">
 <input type="submit" value="Confirm" id="submit-btn">
 </div>
+<!-- complete display -->
+<div class="complete" id="complete">
+  <img src="images/icon-complete.svg" alt="completed">
+  <h2 class="complete-h1">Thank you!</h2>
+  <p class="complete-p">We've added your card details</p>
+  <button>Continue</button>
+</div>
+
 </form>
 <div class="footer">
   Challenge by
@@ -95,12 +108,6 @@
   >. Coded by <a href="https://github.com/ginabeki">Gina Beki</a>.
 </div>
 </section>
-<!-- </div> -->
-    <!-- Completed state start -->
-<!-- 
-    Thank you! We've added your card details Continue -->
-
-    
-    <script src="script.js"></script>
+<script src="script.js"></script>
   </body>
 </html>
