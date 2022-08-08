@@ -4,6 +4,8 @@ const card = document.getElementById("card-number");
 const month = document.getElementById("month");
 const year = document.getElementById("year");
 const cvc = document.getElementById("cvc");
+const completed = document.querySelector(".complete");
+const backHome = document.querySelector(".complete button");
 
 document.querySelector(".owner").oninput = () =>{
     document.querySelector(".name").innerText = document.querySelector(".owner").value;
@@ -72,14 +74,20 @@ function checkInputs() {
     setSuccessFor(cvc);
   }
 
-  // show success message on confirmation. Thank you for submission
-  if (ownerValue && cardValue && yearValue && monthValue && cvcValue === true ) {
-    setSuccessFor(alert("yeeeeeiy"))
+  // completed
+  if (ownerValue && cardValue && yearValue && monthValue && cvcValue === setSuccessFor ) {
+    form.style.display="none";
+    completed.style.display="block";
   } else {
-    return false;
+    return setErrorFor;
   }
-
 };
+
+
+backHome.addEventListener("click", function(){
+  window.location.reload();
+});
+
 function setErrorFor(input, message) {
     const formControl = input.parentElement; //.form-control
 	const small = formControl.querySelector('small');
@@ -97,7 +105,7 @@ function isCardNUmber(card) {
 };
 
 function isYear(year) {
-    let yearNumber = /(^[1-9]$)|(^[0-1][1-2]$)|(^0[1-9]$)/;
+    let yearNumber = /[0-2][0-5]|[1-9]/g ;
     return yearNumber.test(year);
 }
 
