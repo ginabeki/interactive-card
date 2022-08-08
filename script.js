@@ -51,7 +51,7 @@ function checkInputs() {
   if (yearValue === "") {
     setErrorFor(year, "Can't be blank");
   } else if(!isYear(yearValue)) {
-    setErrorFor(year, "Invalid year format")
+    setErrorFor(year, "Invalid format")
   } else {
     setSuccessFor(year);
   }
@@ -59,7 +59,7 @@ function checkInputs() {
   if (monthValue === "") {
     setErrorFor(month, "Can't be blank");
   } else if(!isMonth(monthValue)) {
-    setErrorFor(month, "Invalid month format");
+    setErrorFor(month, "Invalid format");
   } else {
     setSuccessFor(month);
   }
