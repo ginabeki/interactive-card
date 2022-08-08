@@ -9,20 +9,14 @@ body {
   font-size: 0.8rem;
   font-family: "Space Grotesk", sans-serif;
   line-height: 1.7;
-  height: 100vh; }
-
-.content {
+  height: 100vh;
   display: flex;
   flex-direction: column; }
 
-.left {
+section.left {
   background-image: url("images/bg-main-mobile.png");
   background-repeat: no-repeat;
-  background-size: 600px 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  background-size: 600px 400px; }
 
 .back img {
   width: 300px;
@@ -32,14 +26,14 @@ body {
 span.text {
   color: #dedddf;
   position: relative;
-  right: -75%;
+  right: -65%;
   top: -98px;
   font-size: 0.8rem; }
 
 .front img {
   width: 300px;
   margin-top: -100px;
-  margin-right: 40px; }
+  margin-left: 10px; }
 
 .text-box {
   position: absolute;
@@ -76,12 +70,21 @@ div.span-flex {
   margin: 10px 0 0 39px;
   text-transform: uppercase; }
 
+div.wrap {
+  width: 100%;
+  max-width: 375px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 10px; }
+
 span.expiry-date {
   margin-left: 80px; }
 
+section.form-group {
+  max-width: 100%; }
+
 form.form {
-  padding: 30px 40px;
-  width: 400px;
+  padding: 30px 25px;
   max-width: 100%; }
 
 .form-control {
@@ -158,10 +161,12 @@ div.footer {
   padding-top: 70px; }
 
 @media screen and (min-width: 600px) {
+  body {
+    flex-direction: row; }
   .content {
     flex-direction: row;
     height: 100vh; }
-  .left {
+  section.left {
     background-image: url("images/bg-main-desktop.png");
     background-size: 1450px 900px;
     width: 30%;
@@ -171,6 +176,8 @@ div.footer {
     padding-top: 0; } }
 
 @media screen and (min-width: 900px) {
+  body {
+    flex-direction: row; }
   .content {
     flex-direction: row;
     height: 100vh; }
