@@ -54,6 +54,7 @@ span.text {
   height: 157px;
   margin-top: 56px;
   margin-left: 58px;
+ 
 }
 
 div.front-card {
@@ -69,6 +70,7 @@ div.front {
   height: 157px;
   margin-top: -74px;
   margin-left: 20px;
+  
 }
 div.solid {
   width: 30px;
@@ -164,6 +166,9 @@ div.wrap {
   font-size: 0.8rem;
   outline: none;
 }
+.form-control input:hover {
+  border: 2px solid $color-very-dark-violet;
+}
 .form-control input:focus {
   outline: 0;
   border: 1px solid $color-very-dark-violet;
@@ -214,6 +219,9 @@ input#submit-btn:hover {
   background-color: #600594;
   border: none;
 }
+input#submit-btn:active {
+  background-color:  #600594;
+}
 div.complete {
   display: none;
   width: 100%;
@@ -244,10 +252,25 @@ div.footer {
   margin-bottom: 15px;
   padding-top: 70px;
 }
+.footer a {
+  text-decoration: none;
+}
+.footer a:hover {
+  color: $color-input-error;
+}
+.footer a:active {
+  border: 1px solid $color-very-dark-violet;
+  color: $color-input-error;
+  
+}
+
 div.complete button {
   @extend input#submit-btn;
   width: 100%;
   max-width: 375px;
+}
+div.complete button:active {
+  background-color:  #600594;
 }
 @media screen and (min-width: 480px) and (max-device-width: 600px) {
   .back img {
