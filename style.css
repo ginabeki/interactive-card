@@ -150,6 +150,9 @@ div.wrap {
   font-size: 0.8rem;
   outline: none; }
 
+.form-control input:hover {
+  border: 2px solid #21092f; }
+
 .form-control input:focus {
   outline: 0;
   border: 1px solid #21092f; }
@@ -198,6 +201,9 @@ input#submit-btn:hover, div.complete button:hover {
   background-color: #600594;
   border: none; }
 
+input#submit-btn:active, div.complete button:active {
+  background-color: #600594; }
+
 div.complete {
   display: none;
   width: 100%;
@@ -228,9 +234,22 @@ div.footer {
   margin-bottom: 15px;
   padding-top: 70px; }
 
+.footer a {
+  text-decoration: none; }
+
+.footer a:hover {
+  color: #ff5252; }
+
+.footer a:active {
+  border: 1px solid #21092f;
+  color: #ff5252; }
+
 div.complete button {
   width: 100%;
   max-width: 375px; }
+
+div.complete button:active {
+  background-color: #600594; }
 
 @media screen and (min-width: 480px) and (max-device-width: 600px) {
   .back img {
