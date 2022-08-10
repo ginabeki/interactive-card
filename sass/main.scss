@@ -34,14 +34,17 @@ section.left {
   background-position: center;
   position: relative;
 }
-div.card-1 {
-  top: 33px;
-  left: 73px;
+div {
+  .card-1 {
+    top: 33px;
+    left: 73px;
+  }
+  .back {
+    position: relative;
+  }
 }
 
-div.back {
-  position: relative;
-}
+
 span.text {
   color: $color-light-grayish;
   position: absolute;
@@ -140,15 +143,17 @@ form.form {
   padding-top: 10px;
   width: 100%;
   max-width: 375px;
+
+  & label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color-very-dark-violet;
+  }
 }
-.form-control label {
-  display: inline-block;
-  margin-bottom: 5px;
-  font-family: inherit;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: $color-very-dark-violet;
-}
+
 div.wrap {
   width: 100%;
   max-width: 375px;
@@ -214,33 +219,36 @@ input#submit-btn {
   font-size: 1.1rem;
   text-align: center;
   margin-top: 20px;
+
+  &:hover {
+    background-color: #600594;
+    border: none;
+  }
+  &:active {
+    background-color:  #600594;
+  }
 }
-input#submit-btn:hover {
-  background-color: #600594;
-  border: none;
-}
-input#submit-btn:active {
-  background-color:  #600594;
-}
+
 div.complete {
   display: none;
   width: 100%;
-  max-width: 375px;
-  position: absolute;
-  top: 445px;
-  left: 50%;
-  transform: translateX(-50%);
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
   text-align: center;
+
+  & img{
+    margin-bottom: 20px;
+  }
+  div.complete h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    margin-bottom: 20px;
+  }
 }
-div.complete img{
-  margin-bottom: 20px;
-}
-div.complete h2 {
-  font-weight: 500;
-  text-transform: uppercase;
-  word-spacing: 4px;
-  margin-bottom: 20px;
-}
+
+
 div.complete p {
   font-size: 14px;
   color: #8e8593;
