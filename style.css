@@ -24,11 +24,11 @@ section.left {
   background-position: center;
   position: relative; }
 
-div.card-1 {
+div .card-1 {
   top: 33px;
   left: 73px; }
 
-div.back {
+div .back {
   position: relative; }
 
 span.text {
@@ -124,14 +124,13 @@ form.form {
   padding-top: 10px;
   width: 100%;
   max-width: 375px; }
-
-.form-control label {
-  display: inline-block;
-  margin-bottom: 5px;
-  font-family: inherit;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #21092f; }
+  .form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #21092f; }
 
 div.wrap {
   width: 100%;
@@ -196,32 +195,26 @@ input#submit-btn, div.complete button {
   font-size: 1.1rem;
   text-align: center;
   margin-top: 20px; }
-
-input#submit-btn:hover, div.complete button:hover {
-  background-color: #600594;
-  border: none; }
-
-input#submit-btn:active, div.complete button:active {
-  background-color: #600594; }
+  input#submit-btn:hover, div.complete button:hover {
+    background-color: #600594;
+    border: none; }
+  input#submit-btn:active, div.complete button:active {
+    background-color: #600594; }
 
 div.complete {
   display: none;
   width: 100%;
-  max-width: 375px;
-  position: absolute;
-  top: 445px;
-  left: 50%;
-  transform: translateX(-50%);
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
   text-align: center; }
-
-div.complete img {
-  margin-bottom: 20px; }
-
-div.complete h2 {
-  font-weight: 500;
-  text-transform: uppercase;
-  word-spacing: 4px;
-  margin-bottom: 20px; }
+  div.complete img {
+    margin-bottom: 20px; }
+  div.complete div.complete h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    margin-bottom: 20px; }
 
 div.complete p {
   font-size: 14px;
