@@ -1,17 +1,5 @@
 # Frontend Mentor - Interactive card details form challenge
 
-## Table of contents
-
-- [Frontend Mentor - Interactive card details form challenge](#frontend-mentor---interactive-card-details-form-challenge)
-  - [Table of contents](#table-of-contents)
-  - [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
-    - [Links](#links)
-  - [How to run this project](#how-to-run-this-project)
-    - [Built with](#built-with)
-  - [Author](#author)
-
 ## Overview
 
 ### The challenge
