@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Link](https://github.com/ginabeki/interactive-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live](https://interactive-credit-card-app.netlify.app/)
 
 ## How to run this project
 - `git clone git@github.com:ginabeki/interactive-card.git`
