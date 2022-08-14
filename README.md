@@ -17,17 +17,18 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-
 ### Links
 
 - Solution URL: [Link](https://github.com/ginabeki/interactive-card)
 - Live Site URL: [Live](https://interactive-credit-card-app.netlify.app/)
 
 ## How to run this project
+
 - `git clone git@github.com:ginabeki/interactive-card.git`
 - On your terminal run `npm install`
 - open `index.html` file through any browser of your choice
 - feel free to submit any issues
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -37,10 +38,8 @@ Users should be able to:
 - Mobile-first workflow
 - Vanilla JS
 
-
 ## Author
 
 - Website - [Gina Beki](https://github.com/ginabeki)
 - Frontend Mentor - [@ginabeki](https://www.frontendmentor.io/profile/ginabeki)
-- Twitter - [@_gina_bw](https://twitter.com/_gina_bw)
-
+- Twitter - [@\_gina_bw](https://twitter.com/_gina_bw)

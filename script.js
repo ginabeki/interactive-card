@@ -1,3 +1,4 @@
+// DOM elements
 const form = document.getElementById("form");
 const owner = document.getElementById("owner");
 const card = document.getElementById("card-number");
@@ -47,6 +48,7 @@ function checkInputs() {
   } else {
     setSuccessFor(owner);
   }
+
   if (cardValue === "") {
     setErrorFor(card, "Can't be blank");
   } else if (!isCardNumber(cardValue)) {
@@ -96,7 +98,8 @@ function setErrorFor(input, message) {
   formControl.className = "form-control error";
   small.innerText = message;
 }
-function setSuccessFor(input, message) {
+
+function setSuccessFor(input) {
   const formControl = input.parentElement; //.form-control
   formControl.className = "form-control success";
 }
@@ -115,6 +118,7 @@ function isMonth(month) {
   let monthNumber = /^(0[1-9]|1[0-2])/;
   return monthNumber.test(month);
 }
+
 function isCvc(cvc) {
   let digits = /^[0-9]{3,4}$/;
   return digits.test(cvc);
