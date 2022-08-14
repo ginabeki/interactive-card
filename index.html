@@ -1,113 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <title>Frontend Mentor | Interactive card details form</title>
-    
-  </head>
-  <body>
-         <!--first section  -->
-<section class="left">
-  <div class="card-1">
-  <div class="back">
-      <span class="text">000</span>
-    <img src="images/bg-card-back.png" alt="back side of card">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet" />
+
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+
+<body>
+  <!--first section  -->
+  <section class="left">
+    <div class="card-1">
+      <div class="back">
+        <span class="text">000</span>
+        <img src="images/bg-card-back.png" alt="back side of card">
+      </div>
     </div>
-  </div>
-  <!-- front card -->
-  <div class="front-card">
-    <div class="front">
-          <div class="solid"></div> 
-          <div class="solid-empty"></div>
+
+    <!-- front card -->
+    <div class="front-card">
+      <div class="front">
+        <div class="solid"></div>
+        <div class="solid-empty"></div>
         <span class="span-1">0000 0000 0000 0000 </span>
-          <span class="name">JANE APPLESEED</span>
+        <span class="name">JANE APPLESEED</span>
         <span class="span-flex">
           <span class="expiry-date">00</span>
           <span class="slash">/</span>
           <span class="exp-year">00</span>
         </span>
-      <!-- </div> -->
-    <img src="images/bg-card-front.png" alt="front side of the card">
-    
+
+        <!-- </div> -->
+        <img src="images/bg-card-front.png" alt="front side of the card">
+      </div>
     </div>
-  </div>
   </section>
+
   <!-- second section starts here -->
-<section class="form-group">
-  <!--  form -->
-<form action="/" method="post" id="form" class="form">
-  <!-- owner -->
-  <div class="form-control">
-    <label for="owner"> CardHolder Name</label>
-    <input type="text" id="owner" placeholder=" e.g. Jane Appleseed" class="owner" >
-    <small>Can't be blank</small>
-  </div>
-  <!-- card number -->
-  <div class="form-control">
-    <label for="card-number"> Card Number </label>
-    <input type="text" id="card-number" placeholder=" e.g. 1234 5678 9123 0000 " class="card-input">
-    <small>Wrong format, number only</small>
-  </div>
-  <!-- Expiry date -->
-  <div class="wrap">
+  <section class="form-group">
+    <!--  form -->
+    <form action="/" method="post" id="form" class="form">
+      <!-- owner -->
+      <div class="form-control">
+        <label for="owner"> CardHolder Name</label>
+        <input type="text" id="owner" placeholder=" e.g. Jane Appleseed" class="owner">
+        <small>Can't be blank</small>
+      </div>
 
+      <!-- card number -->
+      <div class="form-control">
+        <label for="card-number"> Card Number </label>
+        <input type="text" id="card-number" placeholder=" e.g. 1234 5678 9123 0000 " class="card-input">
+        <small>Wrong format, number only</small>
+      </div>
 
-  <div class="form-control">
-    <label for="month">Exp. Date</label>
-    <!-- <div class="expiry"> -->
-      <input type="text" placeholder="MM" id="month" class="month">
-      <!-- </div> -->
-      <small>Can't be blank</small>
+      <!-- Expiry date -->
+      <div class="wrap">
+        <div class="form-control">
+          <label for="month">Exp. Date</label>
+          <!-- <div class="expiry"> -->
+          <input type="text" placeholder="MM" id="month" class="month">
+          <!-- </div> -->
+          <small>Can't be blank</small>
+        </div>
+
+        <div class="form-control">
+          <label for="year">(mm/yy)</label>
+          <input type="text" placeholder="YY" id="year" class="year">
+          <!-- </div> -->
+          <small>Can't be blank</small>
+        </div>
+
+        <!-- CVC number -->
+        <div class="form-control">
+          <label for="cvc">CVC</label>
+          <input type="text" id="cvc" placeholder=" e.g. 123" class="cvc">
+          <small>Can't be blank</small>
+        </div>
+      </div>
+
+      <!-- button -->
+      <div class="submit">
+        <input type="submit" value="Confirm" id="submit-btn">
+      </div>
+    </form>
+
+    <!-- complete display -->
+    <div class="complete" id="complete">
+      <img src="images/icon-complete.svg" alt="completed">
+      <h2 class="complete-h1">Thank you!</h2>
+      <p class="complete-p">We've added your card details</p>
+      <button>Continue</button>
     </div>
-    <div class="form-control"> 
-      <label for="year">(mm/yy)</label>
-      <input type="text" placeholder="YY" id="year" class="year">
-    <!-- </div> -->
-    <small>Can't be blank</small>
-  </div>
- 
 
-  <!-- CVC number -->
-  <div class="form-control">
-    <label for="cvc">CVC</label>
-    <input type="text" id="cvc" placeholder=" e.g. 123" class="cvc">
-    <small>Can't be blank</small>
-  </div>
-</div>
-<!-- button -->
-<div class="submit">
-<input type="submit" value="Confirm" id="submit-btn">
-</div>
-</form>
-<!-- complete display -->
-<div class="complete" id="complete">
-  <img src="images/icon-complete.svg" alt="completed">
-  <h2 class="complete-h1">Thank you!</h2>
-  <p class="complete-p">We've added your card details</p>
-  <button>Continue</button>
-</div>
-<!-- footer -->
-<div class="footer">
-  Challenge by
-  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-    >Frontend Mentor</a
-  >. Coded by <a href="https://github.com/ginabeki">Gina Beki</a>.
-</div>
-</section>
-<script src="script.js"></script>
-  </body>
+    <!-- footer -->
+    <div class="footer">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>.
+      Coded by <a href="https://github.com/ginabeki">Gina Beki</a>.
+    </div>
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ginabeki/interactive-card#readme",
   "devDependencies": {
+    "eslint": "^8.22.0",
     "node-sass": "^7.0.1"
   }
 }
